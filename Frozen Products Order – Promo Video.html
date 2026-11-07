@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frozen Products Order – Promo Video</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#e8f2fb;--ink:#0c3460;--card:#fff;--mut:#4a6585;--ac:#ff7a45}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#061426;--ink:#e6f2ff;--card:#0e2744;--mut:#9db8d6}}
+:root[data-theme="dark"]{--bg:#061426;--ink:#e6f2ff;--card:#0e2744;--mut:#9db8d6}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px}
+.wrap{max-width:1000px;margin:0 auto}
+#stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:linear-gradient(160deg,#0c3460,#07213f 70%);color:#fff;container-type:inline-size}
+.sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;transition:opacity .6s;pointer-events:none;padding:4cqw}
+.sc.on{opacity:1}
+h1,h2{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.big{font-size:8cqw}.mid{font-size:5.4cqw}.sub{font-size:2.3cqw;color:#bfe0ff;margin-top:1.6cqw;font-weight:500}
+.sc.on .rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.sc.on .rise.d2{animation-delay:.5s}.sc.on .rise.d3{animation-delay:1s}
+@keyframes rise{from{opacity:0;transform:translateY(3cqw)}to{opacity:1;transform:none}}
+.flake{position:absolute;top:-5%;color:#fff;opacity:.55;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translateY(115cqh) rotate(360deg)}}
+.hl{color:#7fd4ff}.phone{position:relative}.tap{position:absolute;right:2cqw;bottom:1.2cqw;font-size:4cqw;opacity:0}.sc.on .tap{animation:tap 1.2s 4.5s both}@keyframes tap{0%{opacity:0;transform:translate(4cqw,6cqw)}45%{opacity:1;transform:none}65%{transform:scale(.75)}100%{opacity:1;transform:none}}.cf{position:absolute;top:38%;left:50%;font-size:3.2cqw;animation:burst 1.8s ease-out both}@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(360deg);opacity:0}}.qrbox{background:#fff;color:#0c3460;border-radius:2cqw;padding:1.4cqw;width:21cqw;text-align:center;box-shadow:0 2cqw 5cqw #0006}.qrbox b{display:block;font-size:1.5cqw;margin-top:.8cqw}#qr{width:18cqw;height:18cqw;margin:0 auto}#qr img,#qr canvas{width:100%!important;height:100%!important;display:block}#chip{position:absolute;left:50%;bottom:2cqw;transform:translateX(-50%);background:#ffffff1f;border:.2cqw solid #ffffff44;backdrop-filter:blur(4px);border-radius:5cqw;padding:.7cqw 2cqw;font-weight:700;font-size:1.8cqw;opacity:0;transition:opacity .5s;white-space:nowrap}.tag{font-style:normal;background:#ff7a45;color:#fff;border-radius:1cqw;padding:.1cqw .6cqw;font-size:1.1cqw;margin-left:.4cqw;white-space:nowrap}.sc.on .shake{animation:rise .9s both,shk .5s 1.2s 2}@keyframes shk{25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+.logo{font-size:12cqw;line-height:1}
+.phone{width:22cqw;height:36cqw;margin-top:-1cqw;background:#f4f9ff;color:#0c3460;border-radius:3cqw;border:.8cqw solid #021327;padding:1.6cqw;text-align:left;box-shadow:0 2cqw 5cqw #0006;font-size:1.5cqw;overflow:hidden}
+.phone b{display:block;font-size:1.8cqw;margin-bottom:1cqw}
+.row{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:1.2cqw;padding:.9cqw 1.2cqw;margin-bottom:.9cqw;box-shadow:0 .2cqw .6cqw #0c346018;opacity:0}
+.sc.on .row{animation:rise .6s both}
+.row span:first-child{font-size:2.2cqw;margin-right:.8cqw}.row em{font-style:normal;font-weight:700;color:#ff7a45}
+.split{display:flex;align-items:center;gap:6cqw}
+.tot{margin-top:1cqw;padding-top:1cqw;border-top:.2cqw dashed #0c346055;display:flex;justify-content:space-between;font-weight:800;font-size:2cqw}
+.btn{margin-top:1cqw;background:#ff7a45;color:#fff;border-radius:1cqw;padding:1cqw;text-align:center;font-weight:800;font-size:1.7cqw}
+.sc.on .pulse{animation:pulse 1s 1.2s 3}@keyframes pulse{50%{transform:scale(1.07)}}
+.check{width:14cqw;height:14cqw;border-radius:50%;background:#2ecc8f;display:grid;place-items:center;font-size:8cqw;margin-bottom:2cqw}
+.sc.on .check{animation:pop .7s cubic-bezier(.3,1.6,.5,1) both}@keyframes pop{from{transform:scale(0)}}
+.truck{font-size:7cqw;margin-top:2cqw;position:relative}
+.sc.on .truck{animation:drive 6s linear both}@keyframes drive{from{transform:translateX(-45cqw)}to{transform:translateX(45cqw)}}
+.url{background:#fff;color:#0c3460;font-weight:800;font-size:3.2cqw;padding:1.3cqw 3cqw;border-radius:5cqw;margin-top:3cqw}
+#bar{position:absolute;left:0;bottom:0;height:.6cqw;width:0;background:#7fd4ff}
+#start{position:absolute;inset:0;display:grid;place-items:center;background:#07213fcc;cursor:pointer;z-index:5;text-align:center}
+#start button{font:800 3cqw inherit;font-family:inherit;background:#ff7a45;color:#fff;border:0;border-radius:5cqw;padding:1.4cqw 4cqw;cursor:pointer}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.ctl button{font:600 15px inherit;font-family:inherit;background:var(--card);color:var(--ink);border:1px solid #7fb4e655;border-radius:10px;padding:10px 16px;cursor:pointer}
+.ctl button:focus-visible,#start button:focus-visible{outline:3px solid #ff7a45;outline-offset:2px}
+.vo{background:var(--card);border-radius:12px;padding:6px 18px}
+.vo p{margin:0;padding:12px 0;border-bottom:1px solid #7fb4e633;display:grid;grid-template-columns:78px 1fr;gap:12px;color:var(--mut);transition:color .3s}
+.vo p:last-child{border:0}.vo p.cur{color:var(--ink);font-weight:700}
+.vo small{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.flake{animation:none}}
+</style></head><body><div class="wrap">
+<div id="stage">
+ <div class="sc" data-i="0"><div class="logo rise shake" style="font-size:9cqw">🤤</div><h1 class="big rise d2">Gutom na?<br><span class="hl">Tamad lumabas?</span></h1><div class="sub rise d3">Same tayo! 😅</div></div>
+ <div class="sc" data-i="1"><div class="logo rise">❄️</div><h2 class="mid rise d2">Frozen Products Order</h2><div class="sub rise d3">Order lang sa cellphone, tapos na! 📱</div></div>
+ <div class="sc" data-i="2"><div class="split"><div><h2 class="mid" style="text-align:left">Tanan<br>naa dinhi!</h2><div class="sub" style="text-align:left">Pili lang.<br>Sulit pa ang presyo 💸</div></div>
+  <div class="phone"><b>❄️ Frozen Products</b>
+   <div class="row" style="animation-delay:.6s"><span>🍗</span><span style="flex:1">Chicken Nuggets <i class="tag">🔥 Patok</i></span><em>₱185</em></div>
+   <div class="row" style="animation-delay:1.4s"><span>🌭</span><span style="flex:1">Hotdogs</span><em>₱120</em></div>
+   <div class="row" style="animation-delay:2.2s"><span>🥟</span><span style="flex:1">Siomai</span><em>₱150</em></div>
+   <div class="row" style="animation-delay:3s"><span>🍟</span><span style="flex:1">French Fries</span><em>₱165</em></div>
+   <div class="row" style="animation-delay:3.8s"><span>🥓</span><span style="flex:1">Tocino</span><em>₱130</em></div></div></div></div>
+ <div class="sc" data-i="3"><div class="split"><div><h2 class="mid" style="text-align:left">Pili. Pindot.<br>Tapos na!</h2><div class="sub" style="text-align:left">Kita agad ang total.<br>Walay lisud 👌</div></div>
+  <div class="phone"><b>🛒 Imong order</b>
+   <div class="row" style="animation-delay:.5s"><span>🍗</span><span style="flex:1">Nuggets ×2</span><em>₱370</em></div>
+   <div class="row" style="animation-delay:1.5s"><span>🥟</span><span style="flex:1">Siomai ×1</span><em>₱150</em></div>
+   <div class="row" style="animation-delay:2.5s"><span>🍟</span><span style="flex:1">Fries ×1</span><em>₱165</em></div>
+   <div class="tot"><span>Total</span><span id="tot">₱0</span></div><div class="btn pulse">I-order na!</div><div class="tap">👆</div></div></div></div>
+ <div class="sc" data-i="4"><div class="check">✓</div><h2 class="mid rise d2">Na-order na!</h2><div class="sub rise d3">Hulat lang sa pagkain 🤤</div><div class="truck">🚚💨</div></div>
+ <div class="sc" data-i="5"><div class="split"><div style="text-align:left"><h2 class="mid rise">I-stock na<br>ang freezer!</h2><div class="sub rise d2">Text o tawag para mag-order:</div><div class="url rise d3 pulse" style="display:inline-block;margin-top:1.4cqw">📱 0991 650 0793</div><div class="sub rise d3">o i-scan ang QR 👉 ayaw na paabot!</div></div><div class="qrbox rise d2"><div id="qr"></div><b>frozenfood-blue.vercel.app</b></div></div></div>
+ <div id="chip">📱 Text/Tawag: 0991 650 0793</div><div id="bar"></div>
+ <div id="start"><div><button id="go">▶ I-play</button><div style="font-size:1.8cqw;margin-top:1.5cqw;color:#bfe0ff">Buksan ang sound 🔊</div></div></div>
+</div>
+<div class="ctl"><button id="re">↺ Restart</button><button id="mu">🔊 Music: on</button></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><div class="vo" id="vo" hidden></div>
+</div>
+<script>
+const T=[0,5,12,22,31,38,50];
+const L=["Uy! Gutom ka na ba, pero tamad kang lumabas? Same tayo!","Kaya nandito na ang Frozen Products Order! Frozen food na gusto mo, order lang gamit ang cellphone mo.","Nuggets, hotdog, siomai, fries — tanan naa dinhi! Pili lang, sulit pa ang presyo.","Pindot lang, kita agad ang total mo. Walang hassle, walay lisud!","I-order na, tapos hulat lang sa pagkain. Dali ra gyud!","Ano pang hinihintay mo? I-open na, mag-order na, at i-stock na ang freezer! Punta na sa frozenfood-blue dot vercel dot app. Order na!"];
+const st=document.getElementById('stage'),sc=[...st.querySelectorAll('.sc')],vo=document.getElementById('vo');
+const f=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+vo.innerHTML=L.map((t,i)=>`<p><small>${f(T[i])}–${f(T[i+1])}</small><span>${t}</span></p>`).join('');
+for(let i=0;i<24;i++){const d=document.createElement('div');d.className='flake';d.textContent='❄';d.style.cssText=`left:${Math.random()*100}%;font-size:${1+Math.random()*2.2}cqw;animation-duration:${6+Math.random()*8}s;animation-delay:-${Math.random()*10}s`;st.prepend(d)}
+let t0=0,run=false,cur=-1,AC,master,timer,step=0,musicOn=true;
+function scene(i){cur=i;sc.forEach((s,k)=>{s.classList.remove('on');if(k===i){void s.offsetWidth;s.classList.add('on')}});
+ [...vo.children].forEach((p,k)=>p.classList.toggle('cur',k===i));sfx(i);document.getElementById('chip').style.opacity=(i>=2&&i<5)?1:0;if(i===4)burst();(({2:[600,1400,2200,3000,3800],3:[500,1500,2500,4700]})[i]||[]).forEach(ms=>setTimeout(()=>{if(run&&AC&&cur===i)tone(AC.currentTime,i===3&&ms>4000?96:88,.18,'sine',.3)},ms));
+ if(i===3){const el=document.getElementById('tot');let n=0;const iv=setInterval(()=>{n+=17;if(n>=685){n=685;clearInterval(iv)}el.textContent='₱'+n},60);}}
+function loop(){if(!run)return;const e=(performance.now()-t0)/1000;
+ document.getElementById('bar').style.width=Math.min(100,e/T[6]*100)+'%';
+ let i=T.findIndex((x,k)=>e>=x&&e<T[k+1]);
+ if(e>=T[6]){run=false;stopMusic();return}
+ if(i!==cur)scene(i);
+ if(master&&e>T[6]-3)master.gain.value=Math.max(0,.45*(T[6]-e)/3);
+ requestAnimationFrame(loop)}
+function sfx(i){if(!AC||!master||i<1)return;const t=AC.currentTime+.02;noise(t,.4,.3,2200);if(i===4)[72,76,79,84].forEach((m,k)=>tone(t+k*.09,m,.6,'sine',.3));if(i===5)[84,88,91,96].forEach((m,k)=>tone(t+k*.07,m,.7,'triangle',.22))}
+function burst(){st.querySelectorAll('.cf').forEach(n=>n.remove());const s=sc[4],a=['🎉','✨','❄️','🤤','🍗','💫'];for(let k=0;k<22;k++){const d=document.createElement('span');d.className='cf';d.textContent=a[k%a.length];const g=Math.random()*6.28,r=18+Math.random()*26;d.style.setProperty('--x',Math.cos(g)*r*1.6+'cqw');d.style.setProperty('--y',Math.sin(g)*r*.8+'cqw');d.style.animationDelay=Math.random()*.25+'s';s.appendChild(d)}}
+/* Synth music: C, Am, F, G at 118 bpm */
+const bpm=118,sd=60/bpm/4,ch=[[0,4,7],[9,0,4],[5,9,0],[7,11,2]],bass=[36,33,41,43];
+const hz=m=>440*Math.pow(2,(m-69)/12);
+function tone(t,m,d,type,v){const o=AC.createOscillator(),g=AC.createGain();o.type=type;o.frequency.value=hz(m);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(master);o.start(t);o.stop(t+d+.05)}
+function noise(t,d,v,hp){const b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),a=b.getChannelData(0);for(let i=0;i<a.length;i++)a[i]=Math.random()*2-1;const s=AC.createBufferSource(),fl=AC.createBiquadFilter(),g=AC.createGain();s.buffer=b;fl.type='highpass';fl.frequency.value=hp;g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(fl);fl.connect(g);g.connect(master);s.start(t)}
+function sched(){while(nextT<AC.currentTime+.3){const k=step%16,bar=Math.floor(step/16)%4,c=ch[bar];
+ if(k%4===0){const o=AC.createOscillator(),g=AC.createGain();o.frequency.setValueAtTime(130,nextT);o.frequency.exponentialRampToValueAtTime(40,nextT+.12);g.gain.setValueAtTime(.9,nextT);g.gain.exponentialRampToValueAtTime(.0001,nextT+.18);o.connect(g);g.connect(master);o.start(nextT);o.stop(nextT+.2)}
+ const late=(performance.now()-t0)/1000>T[5];if(k%2===0||late)noise(nextT,.05,late?.16:.12,7000);
+ if(k===4||k===12)noise(nextT,.12,.25,1800);
+ if(k%4===0||k===10)tone(nextT,bass[bar],sd*3,'triangle',.35);
+ tone(nextT,72+c[k%3]+(k%8>=4?12:0),sd*2,'sine',.13);
+ if(k===0)c.forEach(n=>tone(nextT,60+n,sd*15,'triangle',.05));
+ nextT+=sd;step++}}
+let nextT=0;
+function startMusic(){if(!AC)AC=new(window.AudioContext||window.webkitAudioContext)();AC.resume();master=AC.createGain();master.gain.value=musicOn?.45:0;master.connect(AC.destination);step=0;nextT=AC.currentTime+.05;timer=setInterval(sched,60)}
+function stopMusic(){clearInterval(timer);if(master){master.gain.value=0}}
+function play(){stopMusic();document.getElementById('start').style.display='none';cur=-1;t0=performance.now();run=true;try{startMusic()}catch(e){}loop()}
+try{new QRCode(document.getElementById('qr'),{text:'https://frozenfood-blue.vercel.app',width:256,height:256,colorDark:'#0c3460',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M})}catch(e){}
+document.getElementById('go').onclick=play;document.getElementById('re').onclick=play;
+document.getElementById('mu').onclick=e=>{musicOn=!musicOn;if(master)master.gain.value=musicOn?.45:0;e.target.textContent='🔊 Music: '+(musicOn?'on':'off')};
+
+</script></body></html>
